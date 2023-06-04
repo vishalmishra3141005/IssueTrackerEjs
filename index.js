@@ -2,20 +2,23 @@
 const express = require("express");
 const ejs = require("ejs");
 const path = require("path");
-
+const expressLayouts = require("express-ejs-layouts");
 const app = express();
 
 const port = 4000;
 
+app.use(express.urlencoded());
+
 app.set("view engine", "ejs");
+app.use(expressLayouts);
+
 app.set("views", path.join(__dirname, "views"));
+app.set("layout extractScripts", true);
+app.set("layout extractStyles", true);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", function(req, res) {
-    res.render("index", { title: "Home"});
-});
-
+app.use(require("./routes"));
 
 
 app.listen(port, function(err) {
