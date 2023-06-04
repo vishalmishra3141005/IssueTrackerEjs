@@ -13,5 +13,14 @@
 
     </div>
     <div class="list-project">
+        <% for (let project of projects) { %>
+            <div class="project-container">
+                <div class="project-name-author">
+                    <span class="project-name"><%= project.name %></span>
+                    <span class="project-author"><%= project.author %></span>
+                </div>
+                <div class="project-description"><%= project.description %></div>
+            </div>
+        <% } %>
     </div>
 </div>

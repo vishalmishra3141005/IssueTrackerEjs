@@ -1,5 +1,44 @@
 .list-project {
-    margin-top: 40px;
-    height: calc(100% - 40px);
-    background-color: grey;
+    margin-top: 60px;
+    height: calc(100% - 60px);
+}
+
+.project-container {
+    padding: 20px;
+    margin: 10px;
+    background-color: #85d1fc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.project-container:hover {
+    background-color: #85d1fc;
+}
+
+.project-name-author {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-name {
+    display: inline-block;
+    background-color:  	 	#CCCCFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project-author {
+    display: inline-block;
+    background-color:  	 	#CCCCFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project-description {
+    background-color:   	#CCCCFF;
+    padding: 10px;
+    border-radius: 10px;
 }

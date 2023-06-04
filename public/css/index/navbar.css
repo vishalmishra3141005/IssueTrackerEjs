@@ -9,14 +9,15 @@
 }
 
 .nav-container {
-    height: 40px;
+    height: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: pink;
     position: fixed;
     top: 0;
+    padding: 10px;
+    background-color: #7DF9FF;
 }
 
 .new-project {
@@ -24,8 +25,9 @@
     padding: 4px;
     cursor: pointer;
     border-radius: 10px;
+    background-color: rgba(31, 223, 31, 0.74);
 }
 
 .new-project:hover {
-    background-color:  	#FF69B4;
+    background-color:  	greenyellow;
 }

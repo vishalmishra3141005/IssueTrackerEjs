@@ -1,18 +1,27 @@
-<div class="form-container">
-    <form method="post" action="/newproject">
-        <div>
-            <span>Name: </span>
-            <input type="text" name="name" />
-        </div>
-        <div>
-            <span>Description: </span>
-            <input type="text" name="description" />
-        </div>
-        <div>
-            <span>Author</span>
-            <input type="text" name="author" />
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+<link rel="stylesheet" href="/css/newproject/listdisplay.css">
 
+
+
+<div class="main-container">
+    <div class="form-container">
+        <form method="post" action="/newproject">
+            <div class="input-style">
+                <span>Name: </span>
+                <input required type="text" name="name" placeholder="Name"/>
+            </div>
+            <div class="input-style">
+                <span>Author: </span>
+                <input required type="text" name="author" placeholder="Author" />
+            </div>
+            <div class="input-style">
+                <span>Description: </span>
+                <textarea style="resize: none;" required name="description" placeholder="Description"></textarea>
+            </div>
+            <div class="buttom-style">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
 </div>

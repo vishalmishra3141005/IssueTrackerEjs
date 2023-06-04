@@ -1,8 +1,11 @@
 
 const projects = require("../data/projects");
 
+console.log(projects);
+
 module.exports.index = function(req, res) {
-    return res.render("index", { title: "Home" });
+    console.log(projects);
+    return res.render("index", { title: "Home", projects: projects});
 }
 
 module.exports.newProject = function(req, res) {
@@ -10,6 +13,6 @@ module.exports.newProject = function(req, res) {
 }
 
 module.exports.postNewProject = function(req, res) {
-    console.log(req.body);
+    projects.push({...req.body, issues: []});
     return res.redirect("/");
 }
