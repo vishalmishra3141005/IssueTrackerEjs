@@ -2,15 +2,24 @@
 
 const projects = [
     {
-        name: "Facetook", 
+        id: 0,
+        title: "Facetook",
         author: "Jucker", 
         description: "It is used by users to waste time, energy and brain cells.",
-        issue: [], 
+        issues: [
+            {
+                title: "Signup button not working",
+                author: "jack",
+                description: "on clicking the signup button, nothing happens",
+                labels: ["Bug", "Enhancement"],
+            }
+        ],
     }, {
-        name: "Bintagram",
-        author: "Some Kid",
+        id: 1,
+        title: "Bintagram",
+        author: "SomeKid",
         description: "For wanna be models, and also used by people to waste time, energy and brain cells.",
-        issue: [],
+        issues: [],
     }
 ];
 

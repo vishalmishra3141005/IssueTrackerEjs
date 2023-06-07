@@ -18,6 +18,7 @@
     top: 0;
     padding: 10px;
     background-color: #7DF9FF;
+    gap: 10px;
 }
 
 .new-project {
@@ -30,4 +31,38 @@
 
 .new-project:hover {
     background-color:  	greenyellow;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav-search input {
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.nav-search input:focus {
+    border: 1px solid black;
+}
+
+
+.nav-search select {
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.nav-search button {
+    height: 40px;
+    width: max-content;
+    padding: 10px;
 }

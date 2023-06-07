@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/listissues/newissues.css">
+
+
+
+<div class="main-container">
+    <div class="form-container">
+        <form method="post" action=<%= "/" + projectId + "/createnewissue" %>>
+            <div class="input-style">
+                <span>Name: </span>
+                <input required type="text" name="title" placeholder="Name"/>
+            </div>
+            <div class="input-style">
+                <span>Author: </span>
+                <input required type="text" name="author" placeholder="Author" />
+            </div>
+            <div class="input-style">
+                <span>Description: </span>
+                <textarea style="resize: none;" required name="description" placeholder="Description"></textarea>
+            </div>
+            <div class="label-container">
+                <div class="label">
+                    <input type="checkbox" value="bug-issue" name="Bug" /> Bug
+                </div>
+                <div class="label">
+                    <input type="checkbox" value="bug-issue" name="UI-Improvement" /> UI Improvement
+                </div>
+                <div class="label">
+                    <input type="checkbox" value="bug-issue" name="Documentation" /> Documentation
+                </div>
+                <div class="label">
+                    <input type="checkbox" value="bug-issue" name="Enhancement" /> Enchancement
+                </div>
+                <div class="label">
+                    <input type="checkbox" value="bug-issue" name="Duplicate" /> Duplicate
+                </div>
+            </div>
+            <div class="button-style">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>

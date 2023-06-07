@@ -1,0 +1,89 @@
+
+.issue-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar {
+    height: 50px;
+    width: 100%;
+    background-color: #7DF9FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar span {
+    padding: 10px;
+    background-color: rgba(31, 223, 31, 0.74);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-bar span:hover {
+    background-color: greenyellow;
+}
+
+.list-issue {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ind-issue {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #85bdfc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.ind-issue:hover {
+    background-color: #85c8fc;
+}
+
+.ind-title-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ind-title-author span {
+    background-color: #CCCCFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ind-desc-label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.desc-container {
+    padding: 10px;
+    background-color: #CCCCFF;
+    border-radius: 10px;
+}
+
+.label-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.label-container span {
+    background-color: #CCCCFF;
+    padding: 10px;
+    border-radius: 10px;
+}

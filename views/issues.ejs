@@ -1,0 +1,28 @@
+
+<link rel="stylesheet" href="/css/listissues/listissues.css">
+
+<div class="issue-container">
+        <div class="nav-bar">
+                <a style="text-decoration: none; color: inherit;" href=<%= "/" + projectId + "/createnewissue" %>><span>Create new issue</span></a>
+        </div>
+        <div class="list-issue">
+                <% for (let issue of issues) { %>
+                        <div class="ind-issue">
+                            <div class="ind-title-author">
+                                <span><%= issue.title %></span>
+                                <span><%= issue.author %></span>
+                            </div>
+                            <div class="ind-desc-label">
+                                <div class="desc-container"><%= issue.description %></div>
+                                <div class="label-container">
+                                    <% for (let label of issue.labels) { %>
+                                        <span><%= label %></span>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                <% } %>
+
+        </div>
+
+</div>

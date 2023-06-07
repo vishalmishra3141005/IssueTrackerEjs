@@ -5,14 +5,27 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: pink;
 }
 
 .form-container {
     height: max-content;
     width: max-content;
-    background: rgb(19,206,180);
-    background: radial-gradient(circle, rgba(19,206,180,1) 0%, rgba(25,121,9,0) 35%, rgba(0,212,255,1) 100%);
+
+    background-image: linear-gradient(
+            50deg,
+            hsl(240deg 69% 75%) 0%,
+            hsl(199deg 100% 50%) 10%,
+            hsl(194deg 100% 50%) 20%,
+            hsl(184deg 100% 45%) 30%,
+            hsl(160deg 100% 44%) 40%,
+            hsl(120deg 81% 49%) 50%,
+            hsl(76deg 100% 40%) 60%,
+            hsl(52deg 100% 40%) 70%,
+            hsl(37deg 100% 46%) 80%,
+            hsl(20deg 97% 57%) 90%,
+            hsl(0deg 95% 66%) 100%
+    );
+
     display: flex;
     /*align-items: center;*/
     justify-content: center;
@@ -33,6 +46,7 @@
 
 .input-style span {
     font-size: 20px;
+    font-family: sans-serif;
 }
 
 .input-style input {
@@ -42,6 +56,10 @@
     border-radius: 10px;
     border: none;
     outline: none;
+}
+
+.input-style input:focus {
+    border: 2px solid black;
 }
 
 .input-style textarea {
@@ -54,8 +72,23 @@
     font-size: 15px;
 }
 
-.buttom-style {
+.input-style textarea:focus {
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+.button-style {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button-style button {
+    height: 50px;
+    width: 100px;
 }
