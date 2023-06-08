@@ -5,6 +5,7 @@ const expressLayouts = require("express-ejs-layouts");
 const app = express();
 
 const port = 4000;
+const hostname = "0.0.0.0";
 
 app.use(express.urlencoded());
 
@@ -20,7 +21,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(require("./routes"));
 
 
-app.listen(port, function(err) {
+app.listen(port, hostname, function(err) {
     if (err) {
         console.log("Unable to start server..");
     } else {
